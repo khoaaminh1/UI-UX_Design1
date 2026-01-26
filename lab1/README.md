@@ -52,3 +52,8 @@ Filename must match exactly. Examples:
 
 
 Status: 9/9 images completed in folder.
+-----------------
+
+IMGs:
+
+
