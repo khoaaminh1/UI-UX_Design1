@@ -56,4 +56,15 @@ Status: 9/9 images completed in folder.
 
 IMGs:
 
+<img width="1510" height="900" alt="Screenshot 2026-01-26 at 20 11 41" src="https://github.com/user-attachments/assets/5cc95f61-0c42-4fa5-8217-ecb6499a4dea" />
+
+<img width="1511" height="906" alt="Screenshot 2026-01-26 at 20 12 05" src="https://github.com/user-attachments/assets/e5e1426e-bcb8-4635-9e0b-154722bbfb0e" />
+
+<img width="1507" height="893" alt="Screenshot 2026-01-26 at 20 12 28" src="https://github.com/user-attachments/assets/2908e1c1-baf8-4875-a44f-5a47a0b8ebb0" />
+
+<img width="1512" height="906" alt="Screenshot 2026-01-26 at 20 12 58" src="https://github.com/user-attachments/assets/deec6de9-4e03-4679-9ac4-09204762a302" />
+
+
+
+
 
