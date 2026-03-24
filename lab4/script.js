@@ -1,101 +1,101 @@
 // Menu Data with banner paths
 const menuData = {
     burger: {
-        banner: 'assets/images/food/burgers/banner.jpg',
+        banner: 'assets/images/food/burgers/burgerBanner.jpg',
         items: [
             {
                 id: 'burger-1',
                 name: 'Classic Burger',
                 description: 'Beef patty, lettuce, tomato, c...',
                 price: 8.99,
-                image: 'assets/images/food/burgers/burger-classic.jpg'
+                image: 'assets/images/food/burgers/classicBurger.jpg'
             },
             {
                 id: 'burger-2',
                 name: 'Cheese Burger',
                 description: 'Double cheese, bacon, speci...',
                 price: 10.99,
-                image: 'assets/images/food/burgers/burger-cheese.jpg'
+                image: 'assets/images/food/burgers/cheeseBurger.jpg'
             },
             {
                 id: 'burger-3',
                 name: 'Chicken Burger',
                 description: 'Grilled chicken, mayo, lettuce...',
                 price: 9.49,
-                image: 'assets/images/food/burgers/burger-chicken.jpg'
+                image: 'assets/images/food/burgers/chickenBurger.jpg'
             },
             {
                 id: 'burger-4',
                 name: 'Veggie Burger',
                 description: 'Plant-based patty, fresh veg...',
                 price: 8.49,
-                image: 'assets/images/food/burgers/burger-veggie.jpg'
+                image: 'assets/images/food/burgers/veggieBurger.jpg'
             }
         ]
     },
     pizza: {
-        banner: 'assets/images/food/pizzas/banner.jpg',
+        banner: 'assets/images/food/pizzas/pizzaBanner.jpg',
         items: [
             {
                 id: 'pizza-1',
                 name: 'Margherita Pizza',
                 description: 'Fresh mozzarella, basil, tom...',
                 price: 12.99,
-                image: 'assets/images/food/pizzas/pizza-margherita.jpg'
+                image: 'assets/images/food/pizzas/margheritaPizza.jpg'
             },
             {
                 id: 'pizza-2',
                 name: 'Pepperoni Pizza',
                 description: 'Loaded with pepperoni, extr...',
                 price: 13.99,
-                image: 'assets/images/food/pizzas/pizza-pepperoni.jpg'
+                image: 'assets/images/food/pizzas/pepperoniPizza.jpg'
             },
             {
                 id: 'pizza-3',
                 name: 'Veggie Pizza',
                 description: 'Bell peppers, mushrooms, olio...',
                 price: 11.99,
-                image: 'assets/images/food/pizzas/pizza-veggie.jpg'
+                image: 'assets/images/food/pizzas/veggiePizza.jpg'
             },
             {
                 id: 'pizza-4',
                 name: 'Seafood Pizza',
                 description: 'Shrimp, squid, white sauce...',
                 price: 14.99,
-                image: 'assets/images/food/pizzas/pizza-seafood.jpg'
+                image: 'assets/images/food/pizzas/seafoodPizza.jpg'
             }
         ]
     },
     sushi: {
-        banner: 'assets/images/food/sushis/banner.jpg',
+        banner: 'assets/images/food/sushis/sushibanner.jpg',
         items: [
             {
                 id: 'sushi-1',
                 name: 'California Roll',
                 description: 'Crab, avocado, cucumber...',
                 price: 10.99,
-                image: 'assets/images/food/sushis/sushi-california.jpg'
+                image: 'assets/images/food/sushis/californiaRoll.jpg'
             },
             {
                 id: 'sushi-2',
                 name: 'Spicy Tuna Roll',
                 description: 'Spicy tuna, mayo, sriracha...',
                 price: 11.49,
-                image: 'assets/images/food/sushis/sushi-spicy-tuna.jpg'
+                image: 'assets/images/food/sushis/spicytunaRoll.jpg'
             },
             {
                 id: 'sushi-3',
                 name: 'Dragon Roll',
                 description: 'Eel, avocado, sesame seeds...',
                 price: 12.99,
-                image: 'assets/images/food/sushis/sushi-dragon.jpg'
+                image: 'assets/images/food/sushis/dragonRoll.jpg'
             },
             {
                 id: 'sushi-4',
                 name: 'Philadelphia Roll',
                 description: 'Salmon, cream cheese, cucumber...',
                 price: 11.99,
-                image: 'assets/images/food/sushis/sushi-philadelphia.jpg'
+                image: 'assets/images/food/sushis/philadelphiaRoll.jpg'
             }
         ]
     }

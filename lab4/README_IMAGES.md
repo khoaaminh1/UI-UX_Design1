@@ -3,45 +3,39 @@
 Place images under `lab4/assets/images/` using the exact paths below so the HTML/CSS/JS can use them immediately.
 
 ## Restaurant images (Popular Restaurants section)
-- assets/images/restaurants/burger-house.jpg  (recommended 400x250 or 300x200)
-- assets/images/restaurants/pizza-paradise.jpg
-- assets/images/restaurants/sushi-master.jpg
-- assets/images/restaurants/ramen-house.jpg
+- assets/images/restaurants/burgerHouse.jpg ✅
+- assets/images/restaurants/pizza4Ps.jpg ✅
+- assets/images/restaurants/sushiMaster.jpg ✅
+- (Need 1 more restaurant image for 4th card)
 
 ## Category banners (hero images - switch when you click tabs)
-- assets/images/food/burgers/banner.jpg  (recommended 1200x400 or 800x300)
-- assets/images/food/pizzas/banner.jpg
-- assets/images/food/sushis/banner.jpg
+- assets/images/food/burgers/burgerBanner.jpg ✅
+- assets/images/food/pizzas/pizzaBanner.jpg ✅
+- assets/images/food/sushis/sushibanner.jpg ✅
 
-## Food item images (menu items - square ~150x150)
-### Burgers
-- assets/images/food/burgers/burger-classic.jpg
-- assets/images/food/burgers/burger-cheese.jpg
-- assets/images/food/burgers/burger-chicken.jpg
-- assets/images/food/burgers/burger-veggie.jpg
+## Food item images (menu items)
+### Burgers ✅
+- assets/images/food/burgers/classicBurger.jpg ✅
+- assets/images/food/burgers/cheeseBurger.jpg ✅
+- assets/images/food/burgers/chickenBurger.jpg ✅
+- assets/images/food/burgers/veggieBurger.jpg ✅
 
-### Pizzas
-- assets/images/food/pizzas/pizza-margherita.jpg
-- assets/images/food/pizzas/pizza-pepperoni.jpg
-- assets/images/food/pizzas/pizza-veggie.jpg
-- assets/images/food/pizzas/pizza-seafood.jpg
+### Pizzas ✅
+- assets/images/food/pizzas/margheritaPizza.jpg ✅
+- assets/images/food/pizzas/pepperoniPizza.jpg ✅
+- assets/images/food/pizzas/veggiePizza.jpg ✅
+- assets/images/food/pizzas/seafoodPizza.jpg ✅
 
-### Sushis
-- assets/images/food/sushis/sushi-california.jpg
-- assets/images/food/sushis/sushi-spicy-tuna.jpg
-- assets/images/food/sushis/sushi-dragon.jpg
-- assets/images/food/sushis/sushi-philadelphia.jpg
+### Sushis ✅
+- assets/images/food/sushis/californiaRoll.jpg ✅
+- assets/images/food/sushis/spicytunaRoll.jpg ✅
+- assets/images/food/sushis/dragonRoll.jpg ✅
+- assets/images/food/sushis/philadelphiaRoll.jpg ✅
 
 ---
 
-**Total: 4 restaurant + 3 banners + 12 food items = 19 images**
+**Status:** 18/19 images uploaded ✅ (need 1 more restaurant image)
 
 Notes:
-- Filenames must match exactly (lowercase, hyphens) for the demo to load images automatically.
-- If you don't have a real image yet, upload any placeholder with the same filename (e.g., from Unsplash) — I will replace or crop if needed.
-- Banner images change dynamically when you click Burger/Pizza/Sushi tabs.
-
-When you've added the images, tell me and I'll:
-1. Verify they load correctly in the page
-2. Tweak sizes / object-fit to match Figma
-3. Commit and push changes to GitHub (if you want)
+- All food items and banners are ready!
+- Just need 1 more restaurant image for the 4th restaurant card.
