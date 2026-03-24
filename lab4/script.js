@@ -106,6 +106,13 @@ let cart = {};
 
 // Initialize
 document.addEventListener('DOMContentLoaded', () => {
+    // Set initial banner for burger
+    const heroBanner = document.getElementById('hero-banner');
+    if (heroBanner) {
+        heroBanner.src = menuData['burger'].banner;
+        heroBanner.alt = 'Burger Banner';
+    }
+    
     renderMenuItems('burger');
     setupTabListeners();
     setupQuantityListeners();
