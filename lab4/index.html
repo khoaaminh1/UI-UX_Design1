@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FoodHub - Food Ordering App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <h1>FoodHub</h1>
+            <div class="header-right">
+                <span class="cart-icon">🛒</span>
+            </div>
+        </header>
+
+        <!-- Popular Restaurants Section -->
+        <section class="popular-section">
+            <div class="section-header">
+                <h2>Popular Restaurants</h2>
+                <a href="#" class="see-all">See All</a>
+            </div>
+            <div class="restaurants-grid">
+                <div class="restaurant-card">
+                    <img src="assets/images/restaurants/burger-house.jpg" alt="Burger House">
+                    <h3>Burger House</h3>
+                    <div class="restaurant-info">
+                        <span class="rating">⭐ 4.5</span>
+                        <span class="delivery-time">🕐 20-30 min</span>
+                    </div>
+                </div>
+                <div class="restaurant-card">
+                    <img src="assets/images/restaurants/pizza-paradise.jpg" alt="Pizza Paradise">
+                    <h3>Pizza Paradise</h3>
+                    <div class="restaurant-info">
+                        <span class="rating">⭐ 4.8</span>
+                        <span class="delivery-time">🕐 25-35 min</span>
+                    </div>
+                </div>
+                <div class="restaurant-card">
+                    <img src="assets/images/restaurants/sushi-master.jpg" alt="Sushi Master">
+                    <h3>Sushi Master</h3>
+                    <div class="restaurant-info">
+                        <span class="rating">⭐ 4.7</span>
+                        <span class="delivery-time">🕐 30-40 min</span>
+                    </div>
+                </div>
+                <div class="restaurant-card">
+                    <img src="assets/images/restaurants/ramen-house.jpg" alt="Ramen House">
+                    <h3>Ramen House</h3>
+                    <div class="restaurant-info">
+                        <span class="rating">⭐ 4.6</span>
+                        <span class="delivery-time">🕐 15-25 min</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Restaurant Detail Section -->
+        <section class="restaurant-detail">
+            <!-- Dynamic Banner -->
+            <div class="restaurant-hero">
+                <img id="hero-banner" src="assets/images/food/burgers/banner.jpg" alt="Category Banner">
+            </div>
+
+            <!-- Category Tabs -->
+            <div class="category-tabs">
+                <button class="tab-btn active" data-category="burger">Burger</button>
+                <button class="tab-btn" data-category="pizza">Pizza</button>
+                <button class="tab-btn" data-category="sushi">Sushi</button>
+            </div>
+
+            <!-- Menu Items -->
+            <div class="menu-section">
+                <h2>Menu</h2>
+                <div class="menu-items" id="menu-items">
+                    <!-- Items will be inserted here by JavaScript -->
+                </div>
+            </div>
+
+            <!-- View Cart Button -->
+            <div class="cart-footer">
+                <button class="view-cart-btn">View Cart - $<span id="total-price">0.00</span></button>
+            </div>
+        </section>
+
+        <!-- Bottom Navigation -->
+        <nav class="bottom-nav">
+            <a href="#" class="nav-item active">
+                <span class="nav-icon">🏠</span>
+                <span class="nav-label">Home</span>
+            </a>
+            <a href="#" class="nav-item">
+                <span class="nav-icon">🔍</span>
+                <span class="nav-label">Search</span>
+            </a>
+            <a href="#" class="nav-item">
+                <span class="nav-icon">📋</span>
+                <span class="nav-label">Orders</span>
+            </a>
+            <a href="#" class="nav-item">
+                <span class="nav-icon">👤</span>
+                <span class="nav-label">Profile</span>
+            </a>
+        </nav>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
