@@ -192,6 +192,7 @@ body {
 /* Menu Section */
 .menu-section {
     padding: 20px;
+    padding-bottom: 40px;
 }
 
 .menu-section h2 {
@@ -205,6 +206,7 @@ body {
     display: flex;
     flex-direction: column;
     gap: 16px;
+    padding-bottom: 80px;
 }
 
 /* Menu Item Card */
