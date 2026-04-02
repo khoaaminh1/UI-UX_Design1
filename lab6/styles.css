@@ -30,4 +30,20 @@ section {
     display: none;
 }
 
+/* Typing animation cursor */
+#typing-headline::after {
+    content: '|';
+    animation: blink 0.7s infinite;
+}
+
+#typing-headline.finished::after {
+    content: ''; /* Remove cursor when finished */
+}
+
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
+}
+
 

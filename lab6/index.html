@@ -8,6 +8,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="styles.css">
+    <!-- Animate.css for animations -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 </head>
 <body>
 
@@ -40,19 +42,24 @@
     <!-- Hero Section -->
     <header id="hero" class="d-flex align-items-center">
         <div class="container text-center text-white">
-            <h1 class="display-3 fw-bold">The Best Foodie Experience in Town</h1>
-            <p class="lead my-4">Discover our delicious meals and welcoming atmosphere.</p>
-            <a href="#menu" class="btn btn-primary btn-lg">View Our Menu</a>
+            <h1 id="typing-headline" class="display-3 fw-bold" data-text="The Best Foodie Experience in Town"></h1>
+            <div id="hero-subtitle" style="opacity: 0;">
+                <p class="lead my-4">Discover our delicious meals and welcoming atmosphere.</p>
+                <a href="#" class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#bookingModal">Book a Table</a>
+            </div>
         </div>
     </header>
 
     <!-- Featured Menu Section -->
     <section id="menu" class="py-5">
         <div class="container">
-            <h2 class="text-center mb-5">Our Featured Dishes</h2>
+            <h2 class="text-center mb-4">Our Featured Dishes</h2>
+            <div class="text-center mb-4">
+                <button id="reveal-dish-btn" class="btn btn-outline-primary">Khám phá thực đơn</button>
+            </div>
             <div class="row">
                 <!-- Dish 1: Burger -->
-                <div class="col-lg-4 col-md-6 mb-4" data-aos="zoom-in-right" data-aos-delay="100">
+                <div class="col-lg-4 col-md-6 mb-4 dish-item" data-animation="animate__zoomInRight">
                     <div class="card h-100">
                         <img src="../lab4/assets/images/food/burgers/classicBurger.jpg" class="card-img-top" alt="Burger">
                         <div class="card-body text-center">
@@ -63,7 +70,7 @@
                     </div>
                 </div>
                 <!-- Dish 2: Pizza -->
-                <div class="col-lg-4 col-md-6 mb-4" data-aos="zoom-in" data-aos-delay="200">
+                <div class="col-lg-4 col-md-6 mb-4 dish-item" data-animation="animate__zoomIn">
                     <div class="card h-100">
                         <img src="../lab4/assets/images/food/pizzas/margheritaPizza.jpg" class="card-img-top" alt="Pizza">
                         <div class="card-body text-center">
@@ -74,7 +81,7 @@
                     </div>
                 </div>
                 <!-- Dish 3: Sushi -->
-                <div class="col-lg-4 col-md-6 mb-4" data-aos="zoom-in-left" data-aos-delay="300">
+                <div class="col-lg-4 col-md-6 mb-4 dish-item" data-animation="animate__zoomInLeft">
                     <div class="card h-100">
                         <img src="../lab4/assets/images/food/sushis/californiaRoll.jpg" class="card-img-top" alt="Sushi">
                         <div class="card-body text-center">
@@ -107,29 +114,12 @@
     <!-- Contact Section -->
     <section id="contact" class="py-5">
         <div class="container">
-            <h2 class="text-center mb-5">Book Your Table</h2>
-            <div class="row">
-                <div class="col-lg-8 mx-auto">
-                    <form>
-                        <div class="row g-3">
-                            <div class="col-md-6">
-                                <input type="text" class="form-control" placeholder="Your Name" required>
-                            </div>
-                            <div class="col-md-6">
-                                <input type="tel" class="form-control" placeholder="Phone Number" required>
-                            </div>
-                            <div class="col-md-6">
-                                <input type="number" class="form-control" placeholder="Number of Guests" min="1" required>
-                            </div>
-                            <div class="col-md-6">
-                                <input type="date" class="form-control" required>
-                            </div>
-                            <div class="col-12 text-center">
-                                <button type="submit" class="btn btn-primary btn-lg">Book a Table</button>
-                            </div>
-                        </div>
-                    </form>
-                </div>
+            <h2 class="text-center mb-5">Ready for an Unforgettable Meal?</h2>
+            <div class="text-center">
+                <p class="lead">Click the button below to reserve your table.</p>
+                <button type="button" class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#bookingModal">
+                    Book Your Table Now
+                </button>
             </div>
         </div>
     </section>
@@ -141,9 +131,96 @@
         </div>
     </footer>
 
+    <!-- Booking Modal -->
+    <div class="modal fade" id="bookingModal" tabindex="-1" aria-labelledby="bookingModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="bookingModalLabel">Reserve Your Table</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="row g-3">
+                            <div class="col-12">
+                                <label for="modalName" class="form-label">Your Name</label>
+                                <input type="text" id="modalName" class="form-control" placeholder="John Doe" required>
+                            </div>
+                            <div class="col-12">
+                                <label for="modalPhone" class="form-label">Phone Number</label>
+                                <input type="tel" id="modalPhone" class="form-control" placeholder="09xxxxxxxx" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="modalGuests" class="form-label">Number of Guests</label>
+                                <input type="number" id="modalGuests" class="form-control" placeholder="2" min="1" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="modalDate" class="form-label">Date</label>
+                                <input type="date" id="modalDate" class="form-control" required>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="submit" class="btn btn-primary">Confirm Booking</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
     <!-- Bootstrap JS Bundle -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <!-- Custom JS for animations -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // --- Typing Effect ---
+            const headline = document.getElementById('typing-headline');
+            const subtitle = document.getElementById('hero-subtitle');
+            const text = headline.getAttribute('data-text');
+            let i = 0;
+
+            function typeWriter() {
+                if (i < text.length) {
+                    headline.innerHTML += text.charAt(i);
+                    i++;
+                    setTimeout(typeWriter, 80); // Typing speed
+                } else {
+                    headline.classList.add('finished'); // To remove cursor
+                    subtitle.style.transition = 'opacity 0.5s ease-in';
+                    subtitle.style.opacity = 1; // Fade in subtitle
+                }
+            }
+            
+            setTimeout(typeWriter, 500); // Start after a delay
+
+            // --- Interactive Menu Reveal ---
+            const revealBtn = document.getElementById('reveal-dish-btn');
+            const dishes = document.querySelectorAll('.dish-item');
+            let currentIndex = 0;
+
+            if(revealBtn) {
+                revealBtn.addEventListener('click', function () {
+                    if (currentIndex < dishes.length) {
+                        const dish = dishes[currentIndex];
+                        dish.style.display = 'block';
+                        const animation = dish.dataset.animation;
+                        dish.classList.add('animate__animated', animation);
+                        
+                        currentIndex++;
+                    }
+
+                    if (currentIndex === 1) {
+                        revealBtn.textContent = 'Xem món tiếp theo';
+                    }
+
+                    if (currentIndex >= dishes.length) {
+                        revealBtn.style.display = 'none';
+                    }
+                });
+            }
+        });
+    </script>
 </body>
 </html>
