@@ -1,0 +1,33 @@
+/* Custom Styles for Foodie Landing Page */
+
+body {
+    font-family: 'Poppins', sans-serif; /* A modern and clean font, you can add Google Fonts link if needed */
+    /* Add padding to the top to prevent content from being hidden by the fixed navbar */
+    padding-top: 56px; 
+}
+
+#hero {
+    height: calc(100vh - 56px);
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../lab4/assets/images/restaurants/pizza4Ps.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+/* Add your custom styles for each section below */
+#menu .card {
+    transition: transform 0.2s ease-in-out;
+}
+
+#menu .card:hover {
+    transform: scale(1.05);
+}
+
+section {
+    scroll-margin-top: 56px; /* Offset for fixed navbar */
+}
+
+/* Hide dish items by default for the reveal interaction */
+.dish-item {
+    display: none;
+}
+
+
