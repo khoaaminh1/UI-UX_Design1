@@ -23,3 +23,11 @@ This project is a responsive, single page website for a modern restaurant named 
 ## How to View
 
 To view the website, you can open the `index.html` file directly in your web browser. For the best experience, it is recommended to use a live server.
+
+
+<img width="1498" height="856" alt="Screenshot 2026-04-02 at 21 02 31" src="https://github.com/user-attachments/assets/ca1e00ad-93a5-4bb9-bcd1-19b29b30a213" />
+<img width="1500" height="801" alt="Screenshot 2026-04-02 at 21 02 51" src="https://github.com/user-attachments/assets/24ab0b8f-43e0-4264-8499-cf425153db96" />
+<img width="1500" height="761" alt="Screenshot 2026-04-02 at 21 03 13" src="https://github.com/user-attachments/assets/405df37e-6e44-4dfa-ae31-0ef47b65eda6" />
+<img width="1499" height="396" alt="Screenshot 2026-04-02 at 21 03 34" src="https://github.com/user-attachments/assets/7ac2a215-bb96-4013-8dc0-0b9534bdae40" />
+
+
