@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lab 5 - Food Delivery Prototype</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">FoodFlow</div>
+    <nav class="topbar-nav">
+      <button class="chip is-active" data-goto="welcome">Prototype</button>
+      <button class="chip" data-goto="styleguide">Style Guide</button>
+    </nav>
+  </header>
+
+  <main class="app-shell">
+    <aside class="flow-map card">
+      <h2>Prototype Flow</h2>
+      <ol>
+        <li><button class="link-btn" data-goto="welcome">Welcome</button></li>
+        <li><button class="link-btn" data-goto="signin">Sign In</button></li>
+        <li><button class="link-btn" data-goto="home">Home</button></li>
+        <li><button class="link-btn" data-goto="detail">Food Detail</button></li>
+      </ol>
+      <p class="hint">All screens are connected so reviewers can click through the journey.</p>
+    </aside>
+
+    <section class="phone-stage" aria-live="polite">
+      <article class="screen is-visible" id="welcome" data-screen>
+        <div class="phone card">
+          <p class="eyebrow">Food Delivery App</p>
+          <h1>Delicious food, delivered fast</h1>
+          <p>Find your favorite dishes and get them to your door in minutes.</p>
+          <div class="hero-block"></div>
+          <div class="actions">
+            <button class="btn btn-primary" data-goto="signin">Get Started</button>
+            <button class="btn btn-secondary" data-goto="styleguide">View Style Guide</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="screen" id="signin" data-screen>
+        <div class="phone card">
+          <h1>Welcome back</h1>
+          <p>Sign in to continue your order.</p>
+
+          <label class="input-group">
+            <span>Email</span>
+            <input type="email" placeholder="you@example.com" />
+          </label>
+
+          <label class="input-group">
+            <span>Password</span>
+            <input type="password" placeholder="••••••••" />
+          </label>
+
+          <button class="btn btn-primary" data-goto="home">Sign In</button>
+          <button class="btn btn-text" data-goto="welcome">← Back</button>
+        </div>
+      </article>
+
+      <article class="screen" id="home" data-screen>
+        <div class="phone card">
+          <h1>Hi Khoa 👋</h1>
+          <p>What would you like to eat today?</p>
+
+          <div class="search input-group">
+            <span>Search</span>
+            <input type="text" placeholder="Burger, Pizza, Sushi..." />
+          </div>
+
+          <section>
+            <h2 class="section-title">Popular now</h2>
+            <div class="card food-card">
+              <div>
+                <h3>Classic Burger</h3>
+                <p>$8.99 • 4.8★</p>
+              </div>
+              <span class="tag">Best Seller</span>
+            </div>
+            <div class="card food-card">
+              <div>
+                <h3>Margherita Pizza</h3>
+                <p>$10.49 • 4.7★</p>
+              </div>
+              <span class="tag">New</span>
+            </div>
+          </section>
+
+          <nav class="bottom-nav" aria-label="Bottom navigation">
+            <button class="nav-item is-active">Home</button>
+            <button class="nav-item" data-goto="detail">Detail</button>
+            <button class="nav-item">Profile</button>
+          </nav>
+        </div>
+      </article>
+
+      <article class="screen" id="detail" data-screen>
+        <div class="phone card">
+          <button class="btn btn-text back-inline" data-goto="home">← Back to Home</button>
+          <h1>Classic Burger</h1>
+          <p class="price">$8.99</p>
+          <p>
+            Juicy beef patty, cheddar cheese, lettuce, tomato and signature sauce.
+          </p>
+
+          <div class="row gap">
+            <div class="pill">Prep 15 min</div>
+            <div class="pill">4.8★ Rating</div>
+            <div class="pill">Free Delivery</div>
+          </div>
+
+          <button class="btn btn-primary">Add to Cart</button>
+          <button class="btn btn-secondary" data-goto="home">Continue Browsing</button>
+        </div>
+      </article>
+    </section>
+
+    <section class="styleguide card" id="styleguide">
+      <h2>Mini Style Guide</h2>
+
+      <div class="sg-block">
+        <h3>Colors</h3>
+        <div class="color-row">
+          <div class="color-swatch">
+            <span class="swatch swatch-primary"></span>
+            <p>Primary<br><code>#FF6B35</code></p>
+          </div>
+          <div class="color-swatch">
+            <span class="swatch swatch-secondary"></span>
+            <p>Secondary<br><code>#2EC4B6</code></p>
+          </div>
+          <div class="color-swatch">
+            <span class="swatch swatch-neutral"></span>
+            <p>Neutral<br><code>#F8FAFC</code></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="sg-block">
+        <h3>Typography</h3>
+        <p class="type-h1">H1 - 28px / Bold</p>
+        <p class="type-body">Body - 16px / Regular</p>
+        <p class="type-caption">Caption - 13px / Medium</p>
+      </div>
+
+      <div class="sg-block">
+        <h3>Reusable Components</h3>
+        <div class="component-row">
+          <button class="btn btn-primary">Primary Button</button>
+          <button class="btn btn-secondary">Secondary Button</button>
+          <div class="input-group demo-input">
+            <span>Input Field</span>
+            <input type="text" placeholder="Type here..." />
+          </div>
+        </div>
+      </div>
+
+      <div class="sg-block">
+        <h3>Spacing / Grid Idea</h3>
+        <p>Base spacing scale: <code>8px</code>, <code>16px</code>, <code>24px</code>, <code>32px</code></p>
+        <p>Phone frame width: <code>360px</code>, card radius: <code>16px</code></p>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
