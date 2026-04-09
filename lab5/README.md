@@ -1,37 +1,37 @@
-# Lab 5 - UI Prototype (Food Delivery)
+# Lab5Lab - UI Prototype (Based on Figma Assignment)
 
-This `lab5` implementation follows the assignment request for a small, realistic product flow with visual consistency and reusable UI components.
+This lab is completed as a **clickable web prototype** that maps directly to the requested Figma deliverables.
 
 ## Product idea
 
 - **Theme**: Food delivery app
-- **Focus**: A simple user journey from onboarding to product detail
+- **Scope**: A small, realistic user flow for ordering food
 
-## Required flow (4 connected screens)
+## Implemented user flow (4 connected screens)
 
-1. Welcome
-2. Sign In
-3. Home
-4. Food Detail
+1. Welcome screen
+2. Sign In screen
+3. Home screen
+4. Food Detail screen
 
-Navigation path is clickable inside the prototype:
+Flow navigation:
 
 - `Welcome -> Sign In -> Home -> Food Detail`
-- `Food Detail -> Home`
+- `Food Detail -> Home` (back path)
 
-## Visual design principles covered
+## Visual design principles applied
 
 - Consistent color palette (`primary`, `secondary`, `neutral`)
-- Readable typography and clear hierarchy
-- Clean spacing and alignment (8px-based scale)
-- Clear button and navigation patterns
-- Consistent card and content structure
+- Readable typography with hierarchy (`H1`, body, caption)
+- Spacing system using 8px-based scale
+- Clear buttons, tags, and bottom navigation
+- Repeated card layout for consistency
 
-## Reusable components used
+## Reusable components included
 
-At least 3 component groups are reused across screens:
+At least 3 reusable components are implemented and reused:
 
-- Buttons (`.btn` variants)
+- Buttons (`.btn`, variants primary/secondary/text)
 - Input fields (`.input-group`)
 - Cards (`.card`, `.food-card`)
 - Navigation items (`.nav-item`, `.chip`)
@@ -39,20 +39,23 @@ At least 3 component groups are reused across screens:
 
 ## Mini style guide section
 
-Included in the same page:
+Included in the same file (`index.html`) under **Style Guide**:
 
-- Primary / secondary / neutral colors
-- Text styles (H1, body, caption)
-- Component samples (button + input)
-- Spacing and frame notes
+- Primary / Secondary / Neutral colors
+- Text styles (H1, Body, Caption)
+- Button + Input component samples
+- Spacing/grid notes
 
-## Files in `lab5`
+## Files
 
-- `index.html`: 4 screens + style guide section
-- `styles.css`: visual system, layout, responsive behavior
-- `script.js`: screen flow interactions
-- `README.md`: documentation and requirement mapping
+- `index.html`: 4 prototype screens + style guide section
+- `styles.css`: full visual system and responsive layout
+- `script.js`: prototype interactions (screen-to-screen click flow)
 
-## How to view
+## How to review
 
-Open `index.html` in browser, then click buttons and flow links to walk through the prototype.
+Open `index.html` in a browser, then click through buttons and navigation links to test the full flow.
+
+## Mapping to Figma submission
+
+If your class requires Figma specifically, this lab can be converted quickly by rebuilding these same 4 screens and components in one Figma page using this exact structure.

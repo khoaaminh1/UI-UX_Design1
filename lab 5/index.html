@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Lab 5 - FoodFlow Premium Prototype</title>
+  <title>Lab 5 - Food Delivery Prototype</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
@@ -28,22 +28,12 @@
     </aside>
 
     <section class="phone-stage" aria-live="polite">
-      <!-- Screen 1: Welcome -->
       <article class="screen is-visible" id="welcome" data-screen>
         <div class="phone card">
           <p class="eyebrow">Food Delivery App</p>
           <h1>Delicious food, delivered fast</h1>
           <p>Find your favorite dishes and get them to your door in minutes.</p>
-          <div class="stat-row">
-            <span class="stat-pill">4.9 App Rating</span>
-            <span class="stat-pill">20 min average</span>
-            <span class="stat-pill">Free shipping</span>
-          </div>
-          <div class="hero-block">
-            <span class="hero-mini-card">Burger Combo</span>
-            <span class="hero-mini-card">Sushi Set</span>
-            <span class="hero-mini-card">Healthy Bowl</span>
-          </div>
+          <div class="hero-block"></div>
           <div class="actions">
             <button class="btn btn-primary" data-goto="signin">Get Started</button>
             <button class="btn btn-secondary" data-goto="styleguide">View Style Guide</button>
@@ -51,7 +41,6 @@
         </div>
       </article>
 
-      <!-- Screen 2: Sign In -->
       <article class="screen" id="signin" data-screen>
         <div class="phone card">
           <h1>Welcome back</h1>
@@ -68,14 +57,13 @@
           </label>
 
           <button class="btn btn-primary" data-goto="home">Sign In</button>
-          <button class="btn btn-text" data-goto="welcome">Back</button>
+          <button class="btn btn-text" data-goto="welcome">← Back</button>
         </div>
       </article>
 
-      <!-- Screen 3: Home -->
       <article class="screen" id="home" data-screen>
         <div class="phone card">
-          <h1>Hi Khoa</h1>
+          <h1>Hi Khoa 👋</h1>
           <p>What would you like to eat today?</p>
 
           <div class="search input-group">
@@ -85,48 +73,47 @@
 
           <section>
             <h2 class="section-title">Popular now</h2>
-            <button class="card food-card selectable-dish is-selected" data-name="Classic Burger Deluxe" data-price="$8.99" data-rating="4.8" data-desc="Juicy beef patty, cheddar cheese, lettuce, tomato and signature sauce." type="button">
+            <div class="card food-card">
               <div>
                 <h3>Classic Burger</h3>
-                <p>$8.99 • 4.8 rating</p>
+                <p>$8.99 • 4.8★</p>
               </div>
               <span class="tag">Best Seller</span>
-            </button>
-            <button class="card food-card selectable-dish" data-name="Margherita Pizza" data-price="$10.49" data-rating="4.7" data-desc="Classic pizza with tomato base, mozzarella and fresh basil for a balanced flavor." type="button">
+            </div>
+            <div class="card food-card">
               <div>
                 <h3>Margherita Pizza</h3>
-                <p>$10.49 • 4.7 rating</p>
+                <p>$10.49 • 4.7★</p>
               </div>
               <span class="tag">New</span>
-            </button>
-            <p id="dishSelectionStatus" class="hint">Selected dish: Classic Burger</p>
+            </div>
           </section>
 
           <nav class="bottom-nav" aria-label="Bottom navigation">
-            <button class="nav-item is-active" data-goto="home">Home</button>
+            <button class="nav-item is-active">Home</button>
             <button class="nav-item" data-goto="detail">Detail</button>
-            <button class="nav-item" data-action="profile">Profile</button>
+            <button class="nav-item">Profile</button>
           </nav>
         </div>
       </article>
 
-      <!-- Screen 4: Detail -->
       <article class="screen" id="detail" data-screen>
         <div class="phone card">
-          <button class="btn btn-text back-inline" data-goto="home">Back to Home</button>
-          <h1 id="detailTitle">Classic Burger Deluxe</h1>
-          <p class="price" id="detailPrice">$8.99</p>
-          <p id="detailDesc">Juicy beef patty, cheddar cheese, lettuce, tomato and signature sauce.</p>
+          <button class="btn btn-text back-inline" data-goto="home">← Back to Home</button>
+          <h1>Classic Burger</h1>
+          <p class="price">$8.99</p>
+          <p>
+            Juicy beef patty, cheddar cheese, lettuce, tomato and signature sauce.
+          </p>
 
           <div class="row gap">
             <div class="pill">Prep 15 min</div>
-            <div class="pill" id="detailRating">4.8 Rating</div>
+            <div class="pill">4.8★ Rating</div>
             <div class="pill">Free Delivery</div>
           </div>
 
-          <button class="btn btn-primary" id="addToCartBtn">Add to Cart</button>
+          <button class="btn btn-primary">Add to Cart</button>
           <button class="btn btn-secondary" data-goto="home">Continue Browsing</button>
-          <p id="cartStatus" class="hint status-message"></p>
         </div>
       </article>
     </section>
@@ -139,15 +126,15 @@
         <div class="color-row">
           <div class="color-swatch">
             <span class="swatch swatch-primary"></span>
-            <p>Primary<br><code>#FF7EA8</code></p>
+            <p>Primary<br><code>#FF8FAB</code></p>
           </div>
           <div class="color-swatch">
             <span class="swatch swatch-secondary"></span>
-            <p>Secondary<br><code>#6DD3E9</code></p>
+            <p>Secondary<br><code>#7BDFF2</code></p>
           </div>
           <div class="color-swatch">
             <span class="swatch swatch-neutral"></span>
-            <p>Neutral<br><code>#F2F4F7</code></p>
+            <p>Neutral<br><code>#FFF8FB</code></p>
           </div>
         </div>
       </div>
